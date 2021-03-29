@@ -1,1 +1,1 @@
-This scenario described an application deployment on OpenShift cluster running in Power Systems Virtual Server
+This scenario described an H2O deployment on Kubernetes running in Power Systems Virtual Server
