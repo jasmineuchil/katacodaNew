@@ -1,2 +1,1 @@
-docker pull mithunhr/dbmongo:latest
-docker pull mithunhr/appnode:latest
+docker pull jasmi111/h2o:latest
