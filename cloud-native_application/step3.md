@@ -1,33 +1,9 @@
-Let's now deploy the sample application.
+After pod is successfully running:
+ Get pods name
+ `kubectl get po -n=jas`{{execute}}
 
-Cloning the repository
+ Then execute it
+ `kubectl exec -it $pod-name -n=jas -- /bin/sh`
 
-`git clone https://github.com/jasmineuchil/h2o_on_ocp`{{execute}}
-
-This repository contains the service and deployment configuration files that can be used as-is on the  Kubernetes platform.
-
-Change Directory
-
-`cd $PWD/h2o_on_ocp/docker/`{{execute}}
-
-Run a docker build:
- `docker build -t h2o:latest .`{{execute}}
-
-Chane Directory
-`cd ../`{{execute}}
-
-Create a new Project
-`kubectl create namespace jas
- kubectl create -f h2o-service.yaml --validate=false --namespace=jas
- kubectl create -f h2o-deployment.yaml --validate=false --namespace=jas`{{execute HOST1}}
-
-`oc new-project jasm`{{execute}}
-`oc project jasm`{{execute}}
-
-Deploy the application
-
-
-Check status of Pods
-
-
-Assuming pods have successfully started, let us now expose the application services outside cluster via
+Then run
+`./example.sh`{{execute}}
