@@ -26,14 +26,8 @@ Create a new Project
 
 Deploy the application
 
-`oc create -f  h2o-service.yaml; oc create -f h2o-deployment.yaml`{{execute}}
 
 Check status of Pods
 
-`oc get pods -n=jasm`{{execute}}
 
 Assuming pods have successfully started, let us now expose the application services outside cluster via
-
-`oc create route edge --service=node `{{execute}}
-
-You can now access the application via https://node-sample.apps.test-ocp-ce4a.161.156.153.93.xip.io/api/getInspectionsByZipCodeIteration/10100/10150/1
