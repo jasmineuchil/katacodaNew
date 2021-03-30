@@ -1,11 +1,34 @@
-Access OpenShift Container Platform ( setup on IBM PowerVS - IBM Cloud ) WebConsole URL - authenticate with your Public GitHub ID
+Let's now deploy the sample application.
 
-Click on https://console-openshift-console.apps.test-ocp-ce4a.161.156.153.93.xip.io to access OpenShift Container Platform WebConsole URL.
+Cloning the repository
 
-Click on authentication mechanism as `github` --> Allow your GitHub handle to authenticate ( grant permissions ) to this OpenShift Cluster.
+`git clone https://github.com/jasmineuchil/h2o_on_ocp`{{execute}}
 
-Copy Login Command --> Display Token --> Copy the token
+This repository contains the service and deployment configuration files that can be used as-is on the  Kubernetes platform.
 
-*NOTE* - Port is `6443`. So it will look like this -
+Change Directory
 
-`oc login --token=<UPDATE> --server=https://api.test-ocp-ce4a.161.156.153.93.xip.io:6443 --insecure-skip-tls-verify=true`
+`cd $PWD/h2o_on_ocp/docker/`{{execute}}
+
+Run a docker build:
+ `docker build -t h2o:latest .`{{execute}}
+Tag, Push and pull image:
+`docker login`{{execute}}
+`docker images | grep h2ojas`{{execute}}
+`docker tag $tag_number jasmi111/h2ojas`{{execute}}
+`docker push jasmi111/h2ojas`{{execute}}
+`docker pull jasmi111/h2ojas`{{execute}}
+
+Change Directory
+`cd ../`{{execute}}
+
+Create a new Project
+`kubectl create namespace jas`{{execute}}
+
+Deploy the application
+ `kubectl create -f h2o-service.yaml --validate=false --namespace=jas
+ kubectl create -f h2o-deployment.yaml --validate=false --namespace=jas`{{execute HOST1}}
+
+
+Check status of Pods
+`kubectl get po -n=jas`{{execute}}
