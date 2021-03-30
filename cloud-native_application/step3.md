@@ -6,4 +6,4 @@ After pod is successfully running:
  `kubectl exec -it $pod-name -n=jas -- /bin/sh`
 
 Then run
-`./example.sh`{{execute}}
+`./run_example.sh`{{execute}}
