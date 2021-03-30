@@ -1,7 +1,8 @@
 We will leverage `oc` command to interact with the OpenShift cluster.
 Let's download the `oc` tarball from the running cluster.
 The command below will initialise the cluster with a known token to simplify the following steps.
-
+`minikube start --wait=false`{{execute}}
+`kubectl get nodes`{{execute}}
 `kubeadm init --token=102952.1a7dd4cc8d1f4cc5 --kubernetes-version $(kubeadm version -o short)`{{execute}}
 
 
