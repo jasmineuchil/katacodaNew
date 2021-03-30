@@ -31,7 +31,7 @@
         "app.js"
     ],
     "environment": {
-        "uilayout": "terminal"
+        "uilayout": "terminal-terminal"
     },
     "backend": {
         "imageid": "kubernetes-cluster:1.18"
