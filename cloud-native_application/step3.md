@@ -1,9 +1,9 @@
 After pod is successfully running:
- Get pods name
+ Get $pod-name from below command
  `kubectl get po -n=jas`{{execute}}
 
- Then execute it
+The `kubectl exec` command allows you to remotely run commands inside an existing container of a pod.
  `kubectl exec -it $pod-name -n=jas -- /bin/sh`
 
-Then run
+After login to the container run sample example
 `./run_example.sh`{{execute}}
