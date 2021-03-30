@@ -1,8 +1,8 @@
 {
-    "title": "Deploying a sample application on Kubernets Cluster hosted on Power Systems Virtual Servers",
+    "title": "Deploying a H2O application on Kubernets Cluster",
     "description": "Learn how to deploy a H2O application",
     "difficulty": "intermediate",
-    "time": "10-15 minutes",
+    "time": "15 minutes",
     "details": {
         "steps": [
             {
@@ -10,11 +10,11 @@
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - Authenticate with your GitHub Handle",
+                "title": "Step 2 - Deploying service/deployment files for h2o",
                 "text": "step2.md"
             },
             {
-                "title": "Step 3 - Deploying Cloud Native Application",
+                "title": "Step 3 - Login to the container and running sample example",
                 "text": "step3.md"
             }
         ],
