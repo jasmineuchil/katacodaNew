@@ -11,13 +11,7 @@ Change Directory
 `cd $PWD/h2o_on_ocp/docker/`{{execute}}
 
 Run a docker build:
- `docker build -t h2o:latest .`{{execute}}
-Tag, Push and pull image:
-`docker login`{{execute}}
-`docker images | grep h2ojas`{{execute}}
-`docker tag $tag_number jasmi111/h2ojas`{{execute}}
-`docker push jasmi111/h2ojas`{{execute}}
-`docker pull jasmi111/h2ojas`{{execute}}
+ `docker build -t h2ojas:latest .`{{execute}}
 
 Change Directory
 `cd ../`{{execute}}
