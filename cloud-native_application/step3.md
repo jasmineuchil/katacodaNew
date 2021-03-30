@@ -17,6 +17,9 @@ Chane Directory
 `cd ../`{{execute}}
 
 Create a new Project
+`kubectl create namespace jas
+ kubectl create -f h20-service.yaml --validate=false --namespace=jas
+ kubectl create -f h20-deployment.yaml --validate=false --namespace=jas`{{execute HOST1}}
 
 `oc new-project jasm`{{execute}}
 `oc project jasm`{{execute}}
