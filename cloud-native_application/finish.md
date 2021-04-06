@@ -1,1 +1,1 @@
-This scenario described an H2O deployment on Kubernetes running in Virtual Server
+This scenario described an H2O deployment on OCP running in Virtual Server
