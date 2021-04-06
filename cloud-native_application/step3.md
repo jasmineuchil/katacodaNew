@@ -19,7 +19,7 @@ Change Directory
 `cd ../`{{execute}}
 
 Deploy the application
-`oc create -f h2o-service.yaml; oc create -f h2o-deployment.yaml; oc create -f node-deployment.yaml` {{execute}}
+`oc create -f h2o-service.yaml; oc create -f h2o-deployment.yaml; oc create -f node-deployment.yaml`{{execute}}
 
 Check status of Pods
 
