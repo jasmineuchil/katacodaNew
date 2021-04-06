@@ -1,5 +1,5 @@
 {
-    "title": "Deploying a H2O application on Kubernets Cluster",
+    "title": "Deploying a H2O application on OCP Cluster",
     "description": "Learn how to deploy a H2O application",
     "difficulty": "intermediate",
     "time": "15 minutes",
@@ -10,11 +10,11 @@
                 "text": "step1.md"
             },
             {
-                "title": "Step 2 - Deploying service/deployment files for h2o",
+                "title": "Step 2 - Authenticate with your GitHub Handle",
                 "text": "step2.md"
             },
             {
-                "title": "Step 3 - Login to the container and running sample example",
+                "title": "Step 3 - Deploying Cloud Native Application",
                 "text": "step3.md"
             }
         ],
@@ -27,13 +27,10 @@
             "text": "finish.md"
         }
     },
-    "files": [
-        "app.js"
-    ],
     "environment": {
-        "uilayout": "terminal-terminal"
+        "uilayout": "terminal"
     },
     "backend": {
-        "imageid": "kubernetes-cluster:1.18"
+        "imageid": "ubuntu:1804"
     }
 }
