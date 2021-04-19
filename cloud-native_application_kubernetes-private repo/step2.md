@@ -6,6 +6,12 @@ Cloning the repository
 
 This repository contains the service and deployment configuration files that can be used as-is on the  Kubernetes platform.
 
+
+Before starting, Please get a license key for accessing H2O platform. Sign up https://www.h2o.ai/try-driverless-ai/ now.
+Check your mail for license key and now replace the license key.
+`vi $PWD/h2o_on_ocp/docker/experiment/license.sig`{{execute}}
+
+
 Change Directory
 
 `cd $PWD/h2o_on_ocp/docker/`{{execute}}
